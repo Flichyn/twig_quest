@@ -1,0 +1,19 @@
+{
+    "name": "wcs/quete_composer",
+    "description": "Projet quête composer",
+    "authors": [
+        {
+            "name": "Flichyn",
+            "email": "nicolasflichy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+    }
+},
+    "require": {
+        "ehime/hello-world": "^1.0",
+        "twig/twig": "^3.0"
+    }
+}

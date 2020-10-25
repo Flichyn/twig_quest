@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Twig Quest{% endblock %}</title>
+
+    {% block stylesheet %}
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% endblock %}
+</head>
+
+<body>
+
+<header>
+    {% block navbar %}
+        <div class="navbar">
+            <nav>
+                <img src="logo"/>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    {% endblock %}
+</header>
+
+{% block content %}
+    Blabla
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+
+</body>
+</html>

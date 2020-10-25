@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Products | Twig Quest
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        {% for product in products %}
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product }}</h5>
+                        <p class="card-text">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}
+
+        {# <div class="card" style="width: 18rem;"> #}
+        {# <img src="..." class="card-img-top" alt="..."> #}
+        {# <div class="card-body"> #}
+        {# <h5 class="card-title">{{ product }}</h5> #}
+        {# <p class="card-text">Lorem ipsum dolor</p> #}
+        {# <a href="#" class="btn btn-primary">Go somewhere</a> #}
+        {# </div> #}
+        {# </div> #}
+
+        {# <div class="container"> #}
+        {# <div class="row"> #}
+        {# <div class="col-lg-4"> #}
+        {# <h2 class="card-title">{{ product }}</h2> #}
+        {# </div> #}
+        {# </div> #}
+{# </div>    #}
