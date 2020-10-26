@@ -2,9 +2,12 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use App\wcs\Hello;
+use \HelloWorld\SayHello;
 
+$hello = new SayHello();
 $person = new Hello();
 
+echo $hello->world();
 echo $person->talk();
 
 
